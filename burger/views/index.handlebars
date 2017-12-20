@@ -1,0 +1,34 @@
+<div class="container">
+
+    <h1>Eat Da Burger!</h1>
+
+    <!-- Pass in data from server.js -->
+    <div id="new">
+        <h2>Burgers ready to be enjoyed!</h2>
+
+        <ul>
+            {{#each burgers}} {{#unless devoured}} {{> burgers/newburger devoured=true}} {{/unless}} {{/each}}
+        </ul>
+    </div>
+
+    <div id="gone">
+        <h2>Burgers that have been devoured!</h2>
+
+        <ul>
+            {{#each burgers}} {{#if devoured}}
+            <li>
+                {{burger_name}}
+            </li>
+            {{/if}} {{/each}}
+        </ul>
+    </div>
+
+    <div class="form">
+        <form>
+            <input type="text" id="bur" name="name">
+
+            <button id="addBurger" type="submit">Add Burger</button>
+            <p>Create a burger you want to devour, then press the 'Add Burger' button!</p>
+        </form>
+    </div>
+</div>

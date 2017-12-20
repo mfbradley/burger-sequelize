@@ -1,0 +1,25 @@
+body {
+    background-image: url("http://www.download3dhouse.com/wp-content/uploads/2015/08/Restaurant-rustic-brick-walls.jpg");
+}
+
+.container {
+    background-color: white;
+    opacity: .8;
+    display: grid;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 11%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    font-size: medium;
+}
