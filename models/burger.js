@@ -4,7 +4,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: { len: [1] }
-
         },
 
         devoured: {
@@ -12,7 +11,6 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             defaultValue: false
         }
-
 
     });
 
